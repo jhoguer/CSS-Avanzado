@@ -1,0 +1,34 @@
+/* 
+  position: static | relative | absolute | fixed | sticky
+
+  relative
+    - No pierde su espacio reservado.
+    - La referencia es su posicion inicial en la red
+
+  absolute
+  - Si pierde su espacio reservado
+  - Su referencia es el ancestro mas cercano que este posicionado
+  - Si no hay ancestros su referencia es el body
+
+  Propiedades offset
+  - top
+  - right
+  - left
+  - bottom
+*/
+.container {
+  position: absolute;
+  left: 50px;
+  outline: 5px solid red;
+  height: 500px;
+}
+
+.p-2 {
+  margin-top: 0;
+  position: absolute;
+  background-color: tomato;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
