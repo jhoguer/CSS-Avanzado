@@ -1,0 +1,52 @@
+/*
+  La pila se comporta asi:
+  1. Elementos con nivel de apilamiento negativo
+  2. elementos con position static - valor por defecto
+  2. Elemntos con nivel neutro ó (0) o auto
+  4. Elementos con nivel de apliamiento mayor a 0
+
+  Si los elementos tienen el mismo nvel de aplilamiento, se le da prioridad
+  a el flujo del documento
+
+
+  - Elementos posicinados
+  - Elementos hijos de flex y grid containers con z-index distinto a auto
+  - elementos con opacity, filtros, mix-blend-mode y perspective con valor diferente al inicial
+*/
+
+.element {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.element:nth-of-type(1) {
+  background-color: red;
+  top: 100px;
+  z-index: 15;
+}
+
+.element:nth-of-type(2) {
+  background-color: green;
+
+  z-index: 10;
+}
+
+.element:nth-of-type(3) {
+  display: flex;
+  background-color: yellow;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  background-color: crimson;
+  position: relative;
+  left: 100px;
+  z-index: -1;
+}
+
+.element:nth-of-type(4) {
+  background-color: blue;
+
+}
