@@ -1,0 +1,72 @@
+/*
+  La referencia de fixed es el viewport
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 200vh;
+  margin-top: 4rem;
+  padding-left: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  height: 3rem;
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+a {
+  display: inline-block;
+  color: white;
+}
+
+
+
+.fixed {
+  top: 0;
+  position: fixed;
+  background-color: indigo;
+}
+
+:target {
+  padding-top: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 200vh;
+}
+
+main {
+  grid-column-start: span 3;
+}
+
+.sidebar {
+  position: sticky;
+  top: 4rem;
+  background-color: tomato;
+  width: 100%;
+  height: 400px;
+  left: 0;
+}
