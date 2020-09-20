@@ -1,0 +1,14 @@
+body {
+  --color: pink;
+  color: red;
+}
+
+.container {
+  color: var(--color)
+}
+
+.container p {
+  /* --color: inherit; Herencia hereda el valor de la variable  */ 
+  --color: green; /*Cascada*/
+  color: var(--color);
+}
