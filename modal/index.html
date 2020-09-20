@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Modal</title>
+</head>
+<body>
+  <div class="modal active" id="modal">
+    <div class="content">
+      <h1>Esto es una ventana modal</h1>
+      <p>Creada en el cursos de CSS Avanzado</p>
+      <button id="close-modal">Cerrar modal</button>
+    </div>
+  </div>
+  <main>
+    <button id="open-modal">Abrir modal</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corporis itaque amet! Asperiores illo neque iusto mollitia quam ipsam ut aspernatur architecto tenetur quis! Similique aliquid quas vero soluta explicabo?</p>
+  </main>
+
+  <script>
+    const buttonOpen = document.getElementById('open-modal')
+    const buttonClose = document.getElementById('close-modal')
+    const modal = document.getElementById('modal')
+
+    const toggleActiveModal = () => {
+      modal.classList.toggle('active')
+    }
+
+    buttonClose.addEventListener('click', toggleActiveModal)
+    buttonOpen.addEventListener('click', toggleActiveModal)
+  </script>
+  
+</body>
+</html>
