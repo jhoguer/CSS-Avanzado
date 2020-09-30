@@ -1,0 +1,40 @@
+/*
+  Sintaxis CSS
+  Scope de DOM
+*/
+
+
+:root {
+  --name: value;
+}
+
+h1 {
+  color: var(--name);
+}
+
+/* Sintaxis SASS
+  - Scope de bloque
+
+  */
+
+/* Variable global 
+$name: value;
+
+h1 {
+  color: $name;
+}
+
+*/
+
+p {
+  --color-link: red;
+  --color-span: blue;
+}
+
+span {
+  color: var(--color-span);
+}
+
+a {
+  color: var(--color-link);
+}
