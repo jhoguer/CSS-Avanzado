@@ -1,0 +1,16 @@
+body {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+p {
+  quotes: '\00AB' '\00BB';
+}
+
+p::before {
+  content: open-quote;
+}
+
+p::after {
+  content: close-quote;
+}
