@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+p {
+  --color: red;
+  margin-bottom: 1rem;
+}
+
+p:hover::first-letter {
+  color: var(--color);
+}
+
+p::first-letter {
+  font-family: serif;
+  font-size: 4rem;
+  font-weight: 800;
+  float: left;
+  line-height: 0.3;
+}
+
+p:nth-child(1) {
+  --color: red;
+}
+
+p:nth-child(2) {
+  --color: blue;
+}
+
+p:nth-child(3) {
+  --color: green;
+}
