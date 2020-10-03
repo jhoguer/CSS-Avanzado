@@ -1,0 +1,24 @@
+div {
+  margin-left: 3rem;
+  display: list-item;
+}
+
+/* symbols por ahora solo funciona en firefox */
+ul, ol {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '';
+  display: block;
+  margin-right: 0.2rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: url('https://www.flaticon.es/svg/static/icons/svg/3014/3014029.svg');
+  background-size: contain;
+}
