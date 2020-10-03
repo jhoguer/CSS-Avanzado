@@ -1,0 +1,17 @@
+div {
+  margin-left: 3rem;
+  display: list-item;
+}
+
+/* symbols por ahora solo funciona en firefox */
+ul, ol {
+  /* padding-left: 0; */
+  list-style-position: inside;
+}
+
+/* Por ahora marker solo es soportado por firefox */
+li::marker {
+  content: '😍';
+  color: red;
+}
+
