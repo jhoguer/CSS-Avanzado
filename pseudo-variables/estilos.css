@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+.message {
+  --bg: blue;
+  --message: 'Este es un mensaje';
+  --icon: '🍎';
+  color: white;
+  background-color: var(--bg);
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.message::before {
+  content: var(--icon);
+  margin-right: 0.25rem;
+}
+
+.message::after {
+  content: var(--message);
+}
+
+.message.alert {
+  --icon: '⚠️';
+  --message: 'Esta es una accion peligrosa';
+  --bg: goldenrod;
+}
+
+.message.success {
+  --icon: '✅';
+  --message: 'Este es un mensaje exito';
+  --bg: limegreen;
+}
+
+.message.error {
+  --icon: '❌';
+  --message: 'Esto es un error';
+  --bg: tomato;
+}
+
+.message.error.two {
+  --message: 'Esto es otro error diferente';
+}
