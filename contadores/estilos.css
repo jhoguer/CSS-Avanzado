@@ -1,0 +1,16 @@
+body {
+  font-size: 2rem;
+}
+
+ul {
+  counter-reset: list-counter;
+  list-style-type: none;
+}
+
+li {
+  counter-increment: list-counter;
+}
+
+li::before {
+  content: counter(list-counter, upper-roman) '. - ';
+}
