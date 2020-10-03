@@ -1,0 +1,22 @@
+body {
+  counter-reset: chapter;
+}
+
+section {
+  counter-reset: sub-chapter;
+  counter-increment: chapter;
+}
+
+p {
+  counter-increment: sub-chapter;
+}
+
+p::before {
+  content: counter(chapter) '.' counter(sub-chapter) ' ';
+  font-weight: 600
+}
+
+h2::after {
+  content: ' N° ' counter(chapter);
+}
+
